@@ -20,7 +20,7 @@ export class BankAccount {
   }
 
   withdraw(monto) {
-    this.total=this.total-50;
+    this.total=this.total-monto;
   }
 
   get balance() {
