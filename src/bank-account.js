@@ -20,6 +20,7 @@ export class BankAccount {
   }
 
   deposit(monto) {
+    if(monto<0) throw new ValueError();
     if(this.estado==false) throw new ValueError();
     this.total=this.total+monto;
   }
