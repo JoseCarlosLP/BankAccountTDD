@@ -23,6 +23,7 @@ export class BankAccount {
   }
 
   withdraw(monto) {
+    if(this.estado==false) throw new ValueError();
     this.total=this.total-monto;
   }
 
